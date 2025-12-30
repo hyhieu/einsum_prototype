@@ -1,0 +1,2 @@
+class Einsum:
+    pass

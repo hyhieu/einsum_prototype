@@ -1,9 +1,20 @@
 [project]
-name = "einsum"
+name = "einsum-prototype"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.4.0",
+    "pytest>=9.0.2",
 ]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
